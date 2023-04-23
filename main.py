@@ -126,9 +126,9 @@ def getHash(url):
 def home():
     return "@WolfieEXE <3"
 
-@app.route("/api/grabber/")
+@app.route("/api/grabber/", method=["POST", "GET"])
 
-@app.route("/api/grabber")
+@app.route("/api/grabber", method=["POST", "GET"])
 
 def GrabberApi():
 
